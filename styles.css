@@ -38,6 +38,7 @@ html, body {
     border: dashed red 1px;
     padding: 20px;
     border-radius: 10px;
+    border-left: 8px orange solid;
 }
 
 .secondary {
