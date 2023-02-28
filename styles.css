@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    border: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    border: 1px solid green;
+    grid-column: 2 / span 2;
+}
+
+.navBar {
+    border: 1px solid blue;
+    grid-row: 1 / span 2;
+}
+
+.main {
+    border: 1px solid purple;
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    border: dashed red 1px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondary {
+    border: 1px solid orange;
+}
