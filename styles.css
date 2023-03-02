@@ -64,8 +64,11 @@ html, body {
 }
 
 .secondary {
-    border: 1px solid orange;
     background-color: rgba(182, 182, 182, 0.4);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding: 20px 20px 20px 0;
 }
 
 /* Header items */
@@ -160,4 +163,41 @@ button {
 
 #com.com {
     margin-left: 10px;
+}
+
+/* Secondary bar items */
+/* First card  */
+.side-card, .friends {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.side-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+}
+
+.side-card h3 {
+    font-size: 16px;
+}
+
+.side-card p {
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+}
+
+/* Second card  */
+.friends {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* Main section items */
+.main p {
+    color: rgb(80, 80, 80);
 }
