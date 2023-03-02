@@ -41,6 +41,9 @@ html, body {
     border: 1px solid blue;
     grid-row: 1 / span 2;
     display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 150px repeat(5, 60px) .2fr repeat(3, 60px);
+    padding: 30px 0 0 10px;
 }
 
 .main {
@@ -122,3 +125,27 @@ button {
 }
 
 /* Navbar items */
+
+.navBar > i {
+    align-self: center;
+    justify-self: center;
+}
+
+.navBar i:first-child {
+    margin: -100px 0 0 0;
+    transform: scale(2);
+}
+
+.navBar span {
+    align-self: center;
+}
+
+.navBar > span:first-of-type {
+    font-size: 24px;
+    align-self: center;
+    margin: -100px 0 0 0;
+}
+
+.fa-people-group, .communities {
+    margin: -70px 0 0 0;
+}
