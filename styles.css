@@ -195,6 +195,27 @@ button {
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+
+.friends img {
+    height: 50px;
+}
+
+.friends div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 3px;
+}
+
+.friends div span {
+    font-weight: bold;
+}
+
+.friends div p {
+    color: rgb(80, 80, 80);
 }
 
 /* Main section items */
