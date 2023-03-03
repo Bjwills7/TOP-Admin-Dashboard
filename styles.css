@@ -129,6 +129,15 @@ button {
     grid-row: 1 / span 2;
 }
 
+button:hover {
+    box-shadow: 0px 0px 5px 0px rgb(0, 132, 255);
+}
+
+button:active {
+    transform: scale(.9);
+
+}
+
 /* Navbar items */
 
 .navBar > i {
@@ -221,4 +230,29 @@ button {
 /* Main section items */
 .main p {
     color: rgb(80, 80, 80);
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+}
+
+.main .card {
+    display: grid;
+    grid-template-columns: 50% repeat(3, 1fr);
+    grid-template-rows: min-content 1fr 10%;
+}
+
+.main i {
+    grid-row: 3 / span 1;
+    transform: scale(1.2);
+}
+
+.fa-star {
+    grid-column: 2;
+}
+
+.fa-eye {
+    grid-column: 3;
+}
+
+.fa-timeline {
+    grid-column: 4;
 }
